@@ -41,9 +41,10 @@
             const y = canvas.height /2;
             const itemSize = canvas.width * 0.6;
 
-            const drawitem = drawItemFunctions[index];
+            const drawItem = drawItemFunctions[index];
+            const hue = Math.random() * 360;
             if(drawItem) {
-                drawItem(ctx, x, y, itemSize);
+                drawItem(ctx, x, y, itemSize,hue);
             }else{
                 drawNumber(ctx, index, x, y, itemSize);
             }

@@ -16,6 +16,6 @@ function drawStar(ctx, x, y, size, hue){
         ctx.lineTo(surfaceX, surfaceY);
 
     }
-    ctx.fillStyle = `hsl(${hue}, 100%, 70%)`;
+    ctx.fillStyle = color.dark(hue);
     ctx.fill();
 }
